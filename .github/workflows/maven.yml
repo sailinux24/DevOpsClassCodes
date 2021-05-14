@@ -32,8 +32,8 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
     
     - name: Build and push
-        id: devopsstuff09
-        uses: docker/devopsstuff09/devops2
+        id: docker_build
+        uses: devopsstuff09/devops2@v1
         with:
           context: ./
           file: ./Dockerfile
