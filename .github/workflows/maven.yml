@@ -33,7 +33,7 @@ jobs:
     
     - name: Build and push
         id: docker_build
-        uses: devopsstuff09/devops2@v1
+        uses: docker/build-push-action@v1
         with:
           context: ./
           file: ./Dockerfile
